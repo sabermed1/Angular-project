@@ -4,13 +4,20 @@ import { HomeComponent } from './home/home.component';
 import { ResidenceComponent } from './Residence/residence/residence.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ResidencedetailsComponent } from './residencedetails/residencedetails.component';
+import { AddResidenceComponent } from './add-residence/add-residence.component';
+import { UpdateResidenceComponent } from './update-residence/update-residence.component';
+import { AddappartementComponent } from './appartement/addappartement/addappartement.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'/home', pathMatch:'full'},
   {path:'residence', component:ResidenceComponent},
   {path: 'details/:id',component:ResidencedetailsComponent},
   {path:'home', component:HomeComponent},
-  {path:'**',component:NotFoundComponent}
+  { path: 'add-residence', component: AddResidenceComponent },
+  { path: 'update-residence/:id', component: UpdateResidenceComponent },
+  {path:'addappartement',component:AddappartementComponent},
+  {path:'**',component:NotFoundComponent},
+  
 ];
 
 @NgModule({
