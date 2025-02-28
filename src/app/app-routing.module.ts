@@ -7,6 +7,8 @@ import { ResidencedetailsComponent } from './residencedetails/residencedetails.c
 import { AddResidenceComponent } from './add-residence/add-residence.component';
 import { UpdateResidenceComponent } from './update-residence/update-residence.component';
 import { AddappartementComponent } from './appartement/addappartement/addappartement.component';
+import { AddApartmentsComponent } from './add-apartments/add-apartments.component';
+
 
 const routes: Routes = [
   {path:'', redirectTo:'/home', pathMatch:'full'},
@@ -15,9 +17,12 @@ const routes: Routes = [
   {path:'home', component:HomeComponent},
   { path: 'add-residence', component: AddResidenceComponent },
   { path: 'update-residence/:id', component: UpdateResidenceComponent },
+
   {path:'addappartement',component:AddappartementComponent},
   {path:'**',component:NotFoundComponent},
   
+  {path:'addAppart',component:AddApartmentsComponent},
+  {path:'**',component:NotFoundComponent}
 ];
 
 @NgModule({

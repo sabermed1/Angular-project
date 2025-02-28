@@ -41,7 +41,12 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ResidencedetailsComponent } from './residencedetails/residencedetails.component';
 import { AddResidenceComponent } from './add-residence/add-residence.component';
 import { UpdateResidenceComponent } from './update-residence/update-residence.component';
+
 import { AddappartementComponent } from './appartement/addappartement/addappartement.component';
+
+import { AddApartmentsComponent } from './add-apartments/add-apartments.component';
+
+
 
 @NgModule({
   declarations: [
@@ -54,13 +59,23 @@ import { AddappartementComponent } from './appartement/addappartement/addapparte
     ResidencedetailsComponent,
     AddResidenceComponent,
     UpdateResidenceComponent,
-    AddappartementComponent
+
+    AddappartementComponent,
+
+    AddApartmentsComponent
+    
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+
     FormsModule ,
     ReactiveFormsModule,// Include FormsModule
+
+    FormsModule, // Include FormsModule
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
